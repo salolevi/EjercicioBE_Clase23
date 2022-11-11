@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Integrador Salomon Levi</title>
+</head>
+<body>
+<table>
+    <th:block th:each="paciente : ${pacientes}">
+        <tr>
+            <td th:text="${paciente.nombre()}">...</td>
+            <td th:text="${paciente.apellido()}">...</td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>
